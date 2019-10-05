@@ -12,10 +12,10 @@
       color: lemonchiffon;
     }
 
-    #q1{ background-color: gainsboro; color: darkkhaki}
-    #q2{ background-color: silver; color: khaki}
-    #q3{ background-color: gray; color: palegoldenrod}
-    #q4{ background-color: dimgray; color: lightgoldenrodyellow}
+    #q1{ background-color: gainsboro; color: darkkhaki; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-bottom: 2%; padding: 5px;}
+    #q2{ background-color: silver; color: khaki; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-bottom: 2%; padding: 5px;}
+    #q3{ background-color: gray; color: palegoldenrod; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-bottom: 2%; padding: 5px;}
+    #q4{ background-color: dimgray; color: lightgoldenrodyellow; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-bottom: 2%; padding: 5px;}
 
   </style>
 </head>
@@ -33,14 +33,34 @@
 
     <script>
       var username = prompt('Hello, what\'s your name?');
-        alert('I\'m very glad you stopped by, ' + username + '.');
+        alert('Nice to meet you, ' + username + '.' +' My name is Lindsay.');
     
       var harrypotter = prompt('Have you ever heard of Harry Potter?');
-        alert('It was a global phenomenon ' + username + '!');
+        alert('It\'s one of my favorite stories, ' + username + '!');
+
       var hogwarts = prompt('Do you wish you could go to Hogwarts?');
+        if (hogwarts === 'yes') {
+          alert('Me too, ' + username + '!')
+        } else { alert('Oh no, ' + username + ', ' + 'you\'re a muggle!')};
+
       var house = prompt('Which house would you be sorted into?');
-      var quidditch = prompt('Will you play quidditch?');
+        if (house === 'Gryffindor') {
+          alert (house + '? ' + 'You\'re very brave.')
+          } else if (house === 'Ravenclaw') {
+            alert (house + '? ' + 'You\'re very wise.')
+            } else if (house === 'Hufflepuff') {
+              alert (house + '? ' + 'You\'re very loyal.') 
+              } else if (house === 'Slytherin') {
+                alert (house + '? ' + 'You\'re very ambitious.') 
+          } else{ alert (house + '? ' + 'Still a muggle, ' + username + ' ?');
+          }
+
+      var quidditch = prompt('Will you play quidditch?')
+        if (quidditch === 'yes') {
+          alert (username + ':' + ' Future Captain of the ' + house + ' House team')  
+        } else { alert ('You can always cheer the ' + house + ' team on to victory!')};
+
     </script>
 
-    </body>
+  </body>
 </html>
