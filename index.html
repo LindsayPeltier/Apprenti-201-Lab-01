@@ -33,31 +33,42 @@
 
     <script>
       var username = prompt('Hello, what\'s your name?');
+      console.log('Nice to meet you, ' + username + '.' +' My name is Lindsay.');
         alert('Nice to meet you, ' + username + '.' +' My name is Lindsay.');
     
       var harrypotter = prompt('Have you ever heard of Harry Potter?');
+      console.log('It\'s one of my favorite stories, ' + username + '!');
         alert('It\'s one of my favorite stories, ' + username + '!');
 
       var hogwarts = prompt('Do you wish you could go to Hogwarts?');
         if (hogwarts === 'yes') {
+          console.log('Me too, ' + username + '!');
           alert('Me too, ' + username + '!')
         } else { alert('Oh no, ' + username + ', ' + 'you\'re a muggle!')};
+          console.log('Oh no, ' + username + ', ' + 'you\'re a muggle!');
 
       var house = prompt('Which house would you be sorted into?');
         if (house === 'Gryffindor') {
+          console.log(house + '? ' + 'You\'re very brave.');
           alert (house + '? ' + 'You\'re very brave.')
           } else if (house === 'Ravenclaw') {
+            console.log(house + '? ' + 'You\'re very wise.');
             alert (house + '? ' + 'You\'re very wise.')
             } else if (house === 'Hufflepuff') {
+              console.log(house + '? ' + 'You\'re very loyal.');
               alert (house + '? ' + 'You\'re very loyal.') 
               } else if (house === 'Slytherin') {
+                console.log(house + '? ' + 'You\'re very ambitious.');
                 alert (house + '? ' + 'You\'re very ambitious.') 
+                  console.log(house + '? ' + 'Still a muggle, ' + username + ' ?');               
           } else{ alert (house + '? ' + 'Still a muggle, ' + username + ' ?');
           }
 
       var quidditch = prompt('Will you play quidditch?')
         if (quidditch === 'yes') {
+          console.log(username + ':' + ' Future Captain of the ' + house + ' House team');
           alert (username + ':' + ' Future Captain of the ' + house + ' House team')  
+                 console.log('You can always cheer the ' + house + ' team on to victory!');
         } else { alert ('You can always cheer the ' + house + ' team on to victory!')};
 
     </script>
